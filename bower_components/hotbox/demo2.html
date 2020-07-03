@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../bower_components/seajs/dist/sea.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="hotbox.css" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .message {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .editor {
+            width: 1200px;
+            height: 750px;
+            position: relative;
+            background: rgb(251, 251, 251);
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        #test {
+            width: 130px;
+            margin: auto;
+            border: 1px solid pink;
+            cursor: pointer;
+            display: none;
+            position: fixed;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+<div class="message">编辑区域获得焦点时，按空格呼出热盒。主菜单的快捷键可以直接执行</div>
+<div class="editor" ></div>
+<div id="test">
+    <ul class="subnav">
+        <li>点赞</li>
+        <li>评论</li>
+        <li>回首页</li>
+    </ul>
+</div>
+</body>
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
+<script>
+   /* window.onload = function () {
+        let rbox = document.querySelector("#test");
+        //去掉默认的contextmenu事件，否则会和右键事件同时出现。
+        document.oncontextmenu = function (e) {
+            e.preventDefault();
+        };
+        document.onmousedown = function (e) {
+            // console.log(e);
+            if (e.button == 0) {
+                // alert("你点了右键");
+                rbox.style.display = "block";
+                rbox.style.left = e.x + "px";
+                rbox.style.top = e.y + "px";
+            } else if (e.button == 0) {
+                rbox.style.display = "none";
+            } else if (e.button == 1) {
+                // alert("你点了滚轮");
+            }
+        }
+        $(".editor").keydown(function(e){
+            if(e.keyCode==32){
+                console.log("点击了键盘")
+            }
+
+        });
+    }*/
+
+    /* global seajs */
+    seajs.config({
+        base: './src'
+    });
+
+    define('sta2rt', function(require) {
+        var HotBox = require('hotbox');
+
+        var hotbox = new HotBox('.editor');
+
+        hotbox.control();
+
+        hotbox.hintDeactiveMainState = true;
+        hotbox.openOnContextMenu = true;
+
+        var main = hotbox.state('main');
+
+        main.button({
+            position: 'center',
+            label: '编辑',
+            key: 'F2'
+        });
+
+        var ringButtons = '前移:Alt+Up|下级:Tab|同级:Enter|后移:Alt+Down|删除:Delete|归纳:Shift+Tab'.split('|');
+        ringButtons.forEach(function(button) {
+            main.button({
+                position: 'ring',
+                label: button.split(':')[0],
+                key: button.split(':')[1]
+            });
+        });
+
+
+
+    });
+
+    seajs.use('sta2rt');
+</script>
+</html>

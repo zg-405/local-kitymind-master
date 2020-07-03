@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onbeforeunload="return ''">
+<p onclick="f1()">关闭当前窗口，按下 F5 或点击以下链接触发 onbeforeunload 事件。</p>
+<a href="http://www.baidu.com">点击跳转</a>
+<button onclick="f()">guanbi</button>
+<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(function () {
+        $("p").click();
+    })
+    function myFunction() {
+        return "12312...";
+    }
+    function f() {
+        window.close();
+    }
+    function f1() {
+        alert(123)
+    }
+</script>
+</body>
+</html>

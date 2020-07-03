@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+       // $(window).on('beforeunload',function(){return'Your own message goes here...';});
+      /* $(function () {
+           window.onbeforeunload(function () {
+                alert("关闭窗口bai")
+           })
+       })
+
+       function window.onbeforeunload() {
+           if (event.clientX>document.body.clientWidth && event.clientY<0 ||event.altKey)
+               window.event.returnValue="确定要退出本页吗？";
+       }*/
+       window.onbeforeunload=function(){
+
+//可以阻止浏览器的刷新或者关闭
+
+           return false;
+
+       }
+
+    </script>
+</head>
+<body>
+<a href="http://www.jb51.net">Click here to navigate to
+    www.jb51.net</a>
+</body>
+</html>

@@ -1,0 +1,167 @@
+{
+  "root": {
+    "data": {
+      "id": "abc",
+      "created": 1592453867,
+      "text": "新建脑图"
+    },
+    "children": [
+      {
+        "data": {
+          "id": "c3jxsbkfsy80",
+          "created": 1592453876609,
+          "text": "炼钢"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "c3jxt00u0og0",
+              "created": 1592453929842,
+              "text": "概要（低频表）",
+              "expandState": "expand"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "c3jxtg98k080",
+                  "created": 1592453965178,
+                  "text": "生产信息",
+                  "expandState": "expand"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "c3jxu01m4940",
+                      "created": 1592454008253,
+                      "text": "合同要求"
+                    },
+                    "children": []
+                  },
+                  {
+                    "data": {
+                      "id": "c3jxu23mjkw0",
+                      "created": 1592454012728,
+                      "text": "生产实绩"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": {
+                  "id": "c3jxtjtzwbk0",
+                  "created": 1592453972964,
+                  "text": "分支主题"
+                },
+                "children": []
+              },
+              {
+                "data": {
+                  "id": "c3jxtopsffs0",
+                  "created": 1592453983593,
+                  "text": "分支主题"
+                },
+                "children": []
+              },
+              {
+                "data": {
+                  "id": "c3jxtq591ko0",
+                  "created": 1592453986705,
+                  "text": "分支主题"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "data": {
+              "id": "c3jxuv47wy00",
+              "created": 1592454075891,
+              "text": "转炉"
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "id": "c3jxt1bm0i80",
+              "created": 1592453932670,
+              "text": "精炼"
+            },
+            "children": []
+          },
+          {
+            "data": {
+              "id": "c3jxt31desg0",
+              "created": 1592453936405,
+              "text": "连铸"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "c3jxsjwfk7c0",
+          "created": 1592453894747,
+          "text": "热轧"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "c3jxsk1q1zk0",
+              "created": 1592453895067,
+              "text": "分支主题"
+            },
+            "children": [
+              {
+                "data": {
+                  "id": "c3jxskaz7fs0",
+                  "created": 1592453895627,
+                  "text": "分支主题"
+                },
+                "children": [
+                  {
+                    "data": {
+                      "id": "c3jxskgkhqg0",
+                      "created": 1592453895965,
+                      "text": "分支主题"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "c3jxsm6tv400",
+          "created": 1592453899729,
+          "text": "冷轧"
+        },
+        "children": [
+          {
+            "data": {
+              "id": "c3jxsmh80tc0",
+              "created": 1592453900358,
+              "text": "分支主题"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": {
+          "id": "c3jxsozmt280",
+          "created": 1592453905825,
+          "text": "分支主题"
+        },
+        "children": []
+      }
+    ]
+  },
+  "template": "structure",
+  "theme": "fresh-blue",
+  "version": "1.4.43"
+}

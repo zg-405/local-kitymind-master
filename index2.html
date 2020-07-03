@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="style/index2.css">
+<script src="bower_components/jquery/dist/jquery.js"></script>
+
+<body id="aaa" >
+
+<input id="aaabbb" type="text" value="" style="display: none">
+
+<div>
+    <div id="btnDiv">
+
+            <button onclick="addNode(0)">添加下级节点</button>
+            <!--<button onclick="addNode(1)">添加上级节点</button>-->
+            <button onclick="addNode(2)">添加同级节点</button>
+            <button onclick="addNode(3)">后移</button>
+            <button onclick="addNode(4)">前移</button>
+            <button onclick="addNode(5)">展开到一级节点/关闭</button>
+            <button onclick="addNode(6)">展开全部节点</button>
+            <button onclick="addNode(7)">导出数据</button>
+
+        <select onchange="show_sub(this.options[this.options.selectedIndex].value,0)">
+            <option value="">请选择模板</option>
+            <option value="default">思维导图</option>
+            <option value="tianpan">天盘图</option>
+            <option value="structure">组织结构图</option>
+            <option value="filetree">目录组织图</option>
+            <option value="right">逻辑结构图</option>
+            <option value="fish-bone">鱼骨头图</option>
+        </select>
+        <select onchange="show_sub(this.options[this.options.selectedIndex].value,1)">
+            <option value="">请选择主题</option>
+            <option value="classic">脑图经典</option>
+            <option value="classic-compact">紧凑经典</option>
+            <option value="snow">温柔冷光</option>
+            <option value="snow-compact">紧凑冷光</option>
+            <option value="fish">鱼骨图</option>
+            <option value="wire">线框</option>
+            <option value="fresh-red">清新红</option>
+            <option value="fresh-soil">泥土黄</option>
+            <option value="fresh-green">文艺绿</option>
+            <option value="fresh-blue">天空蓝</option>
+            <option value="fresh-purple">浪漫紫</option>
+            <option value="fresh-pink">脑残粉</option>
+            <option value="fresh-red-compat">紧凑红</option>
+            <option value="fresh-soil-compat">紧凑黄</option>
+            <option value="fresh-green-compat">紧凑绿</option>
+            <option value="fresh-blue-compat">紧凑蓝</option>
+            <option value="fresh-purple-compat">紧凑紫</option>
+            <option value="fresh-pink-compat">紧凑粉</option>
+            <option value="tianpan">经典天盘</option>
+            <option value="tianpan-compact">紧凑天盘</option>
+        </select>
+    </div>
+
+
+    <div id="ifmDiv">
+        <iframe id="iframe1Id" src="index.html" width="100%" height="500px" name="vdIframe"
+                scrolling="no"></iframe>
+    </div>
+
+
+    <div id="noneTool">
+        <!--<div style="border: solid red 1px;height: 0px;width: 100%;">
+            <p></p>
+        </div>-->
+        <div id="noneTool_fir">
+            <input class="noneTool_0" type="text" id="hidInp" value=""/>
+            <span class="noneTool_0" href="javascript:void(0);" id="addTabpp" onclick="addpp()" style="display: none" ></span>
+        </div>
+        <!--<div id="div">
+            <input type="text" value="123">
+        </div>-->
+
+    </div>
+    <div id="noneData">
+        <span>created--></span><input id="created" type="text" class="par par_first" value="" readonly>
+        <span>id--></span><input id="id" type="text" class="par par_else" value="">
+        <span>text--></span><input id="text" type="text" class="par par_else" value="">
+        <span>children.length--></span><input id="children_length" type="text" class="par par_else" value="">
+    </div>
+</div>
+<script src="js/index2.js"></script>
+</body>
+</html>

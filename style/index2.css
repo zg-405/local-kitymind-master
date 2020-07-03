@@ -1,0 +1,45 @@
+#btnDiv {
+    width: 100%;
+    height: 50px;
+    border: blue solid 1px
+}
+
+#ifmDiv {
+    display: inline-block;
+    border: solid 1px black;
+    width: 100%
+}
+
+#iframe1Id {
+    border: none;
+    overflow: hidden
+}
+
+#noneTool {
+    display: none;
+    border: solid 1px black;
+    width: 20%;
+    height: 50px;
+}
+
+#noneTool_fir {
+    display: none;
+    border: solid blue 1px
+}
+
+#div {
+    height: 200px;
+    border: solid red 1px;
+    width: 100%;
+}
+.noneTool_0{
+    opacity:0;
+
+}
+#noneData{
+    height: 50px;
+    border: solid red 1px;
+/*
+    position: absolute;
+    top: 50px;*/
+}
