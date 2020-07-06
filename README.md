@@ -4,18 +4,15 @@
 
 增加了导出（png,text,svg）和导入(text)类型。
 
-不是静态页面
-去除了setAttribute,改为在index2的input框进行交易
-
-
-修改了index2.htmla标签显示错误。
-去除了无用的div。
-
-跨页面操作涉及域的概念（origin），错误的意思是：未捕获的安全错误：阻止了一个域为null的frame页面访问另一个域为null的页面。代码运行时在本地直接用浏览器打开的，地址栏是file:///的页面，只需改为localhost访问就行。
-
-
-等今天下班了，回家慢慢写
-
-wdnmd
-
-![Image text](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593772846141&di=9f0a35024096ea809dcb26d96ad74d8e&imgtype=0&src=http%3A%2F%2Fwww.mogu8.net%2Fuploads%2Fallimg%2F190730%2F210F01364-0.jpg)
+###1.1
+    改动：
+    1.  index2.html       68行   div下面<a>标签改为<span>标签，可以去除index2.html页面底部input框前面span标签的显示错乱
+    2.  setAttribute改为在index2.html中input标签中进行数据交互
+    bug：在进入页面时，默认拖拽按钮开启，此时需手动关闭拖拽按钮方可点击节点拿到正确数据
+    关于关闭页面时修改数据：
+ 	我的设想是 		
+ 		修改数据后，十秒后ajax异步修改数据，
+ 		刷新页面，通过beforeunload函数，ajax同步
+ 		页面关闭时，通过unload函数，ajax同步修改数据，但是unload函数不知道怎么回事不起作用
+    
+    
